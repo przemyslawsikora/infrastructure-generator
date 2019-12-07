@@ -1,10 +1,10 @@
 # Infrastructure Generator
 
-This repository will help you to build your infrastructure of virtual machines for testing, development or production
+This repository will help you to build your infrastructure of virtual machines for testing, development or production.
 
-The built infrastructure will be a set of virtual machines with full network connectivity.
-Each VM will have an own IP address and hostname and will see others machines in the cluster (by ID or hostname).
-On every VM there will be added user with sudo privileges, created private and public key for him, and sent the public key for the rest set of machines in the cluster.
+The built infrastructure will be a set of virtual machines with full network connectivity.  
+Each VM will have an own IP address and hostname and will see others machines in the cluster (by ID or hostname).  
+On every VM there will be added user with sudo privileges, created private and public key for him, and sent the public key for the rest set of machines in the cluster.  
 Therefore, in each single machine the user will be available to connect to other VMs using SSH key authentication.
 
 ## Vagrant
