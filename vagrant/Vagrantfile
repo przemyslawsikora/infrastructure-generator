@@ -4,9 +4,21 @@
 ################################################################
 # Infrastructure Configuration
 ################################################################
+# OS which will be installed on VMs (all available images on https://app.vagrantup.com/boxes/search)
 IMAGE_NAME = "centos/7"
+
+# On every machine there will be added user with sudo privileges with this name
 ADMIN_USERNAME = "admin"
+
+# Password for the user above
 ADMIN_PASSWORD = "12345"
+
+# Description of the cluster.
+# Each element here is a single virtual machine.
+# Each VM is a pair of hostname and set of features:
+# - IP address
+# - number of CPUs
+# - Memory (in MB) 
 CLUSTER = {
     "node-master" => {
         :ip => "192.168.33.101",
@@ -19,7 +31,7 @@ CLUSTER = {
         :mem => 4096
     }
 }
-
+################################################################
 
 VAGRANTFILE_API_VERSION = "2"
 host_to_ip_list = []
